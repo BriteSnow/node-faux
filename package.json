@@ -1,0 +1,42 @@
+{
+  "name": "fs-aux",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "A minimalistic augmentation of the native fs/promises API",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BriteSnow/node-fs-aux.git"
+  },
+  "files": [
+    "src/",
+    "dist/"
+  ],
+  "keywords": [
+    "fs",
+    "file",
+    "fs-extra",
+    "list files",
+    "watch"
+  ],
+  "dependencies": {
+    "fast-glob": "^3.2.11",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.1.0",
+    "mocha": "^9.1.4",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "prepare": "tsc"
+  },
+  "author": "Jeremy Chone <jeremy.chone@gmail.com> (http://jeremychone.com)",
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+# require: ts-node/register
+spec: test/spec/*.spec.ts
+loader: ts-node/esm
+require: ts-node/register
+extensions: ts
+
+# FIXME: Somehow the -w does not work, get 'require() of ES modules is not supported.'
+#        Even if no require() in code? and the normal mocha test works ?? 
+watch-loader: ts-node/esm
+watch-extensions: ts
+watch-files:
+    - test/spec/*.spec.ts
+    - src/**/*.ts

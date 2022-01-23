@@ -1,0 +1,6 @@
+.*
+!.gitignore
+!.mocharc.yaml
+
+node_modules/
+dist/
